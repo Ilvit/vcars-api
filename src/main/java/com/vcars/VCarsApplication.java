@@ -50,28 +50,30 @@ public class VCarsApplication {
 			TaxationRepository taxationRepository, AppRoleRepository appRoleRepository,
 			AppUserService appUserService) {
 		return args->{
-			appRoleRepository.save(new AppRole(null,RolesNames.USER.toString()));
+			/*appRoleRepository.save(new AppRole(null,RolesNames.USER.toString()));
 			appRoleRepository.save(new AppRole(null,RolesNames.ADMIN.toString()));
 			appRoleRepository.save(new AppRole(null,RolesNames.CAR_MANAGER.toString()));
 			appRoleRepository.save(new AppRole(null,RolesNames.USER_MANAGER.toString()));
 			
-			//*
+
 			appUserService.addUser(new AppUserRequestDTO("user1","12345","user1@gmail.com", null));
 			appUserService.addUser(new AppUserRequestDTO("admin1","12345","admin1@gmail.com", null));
 			appUserService.addUser(new AppUserRequestDTO("admin2","12345","admin2@gmail.com", null));
-			appUserService.addUser(new AppUserRequestDTO("vital","12345","ilkab.vit@gmail.com",null));
-			
+			appUserService.addUser(new AppUserRequestDTO("vit@l.kab","vitfoot@2024","ilkab.vit@gmail.com",null));
+
+			//*
+
 			appUserService.addRoleToUser("user1", RolesNames.USER.toString());
 			appUserService.addRoleToUser("admin1", RolesNames.USER.toString());
 			appUserService.addRoleToUser("admin1", RolesNames.CAR_MANAGER.toString());
 			appUserService.addRoleToUser("admin2", RolesNames.USER.toString());
 			appUserService.addRoleToUser("admin2", RolesNames.CAR_MANAGER.toString());
 			appUserService.addRoleToUser("admin2", RolesNames.ADMIN.toString());
-			appUserService.addRoleToUser("vital", RolesNames.USER.toString());
-			appUserService.addRoleToUser("vital", RolesNames.ADMIN.toString());
-			appUserService.addRoleToUser("vital", RolesNames.CAR_MANAGER.toString());
-			appUserService.addRoleToUser("vital", RolesNames.USER_MANAGER.toString());
-//*/			
+			appUserService.addRoleToUser("vit@l.kab", RolesNames.USER.toString());
+			appUserService.addRoleToUser("vit@l.kab", RolesNames.ADMIN.toString());
+			appUserService.addRoleToUser("vit@l.kab", RolesNames.CAR_MANAGER.toString());
+			appUserService.addRoleToUser("vit@l.kab", RolesNames.USER_MANAGER.toString());
+//
 //			Enregistrement des taxes dans la base des données
 			for(TaxationsNames taxName:TaxationsNames.values()) {
 				taxationRepository.save(Taxation.builder().taxationName(taxName).date(new Date()).build());
@@ -131,7 +133,8 @@ public class VCarsApplication {
 					}
 				}
 			});
-		};	
-		
+
+			 */
+		};
 	}
 }
