@@ -50,7 +50,8 @@ public class VCarsApplication {
 			TaxationRepository taxationRepository, AppRoleRepository appRoleRepository,
 			AppUserService appUserService) {
 		return args->{
-			/*appRoleRepository.save(new AppRole(null,RolesNames.USER.toString()));
+			/*
+			appRoleRepository.save(new AppRole(null,RolesNames.USER.toString()));
 			appRoleRepository.save(new AppRole(null,RolesNames.ADMIN.toString()));
 			appRoleRepository.save(new AppRole(null,RolesNames.CAR_MANAGER.toString()));
 			appRoleRepository.save(new AppRole(null,RolesNames.USER_MANAGER.toString()));
@@ -134,7 +135,7 @@ public class VCarsApplication {
 				}
 			});
 
-			 */
+			// */
 		};
 	}
 }
